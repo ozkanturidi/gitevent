@@ -3,6 +3,15 @@ on:
   pull_request:
     types:
       - opened
+    paths-ignore:
+      - ".github/workflows/**"
+  push:
+    branches:
+      - main
+      - "dev-*"
+      - "feat/**"
+    paths-ignore:
+      - ".github/workflows/**"
 jobs:
   deploy:
     runs-on: ubuntu-latest
