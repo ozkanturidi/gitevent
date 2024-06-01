@@ -3,6 +3,7 @@ import MainContent from "./components/MainContent";
 
 function App() {
   //new code
+  //new code 2
   return (
     <>
       <header>
